@@ -1,12 +1,159 @@
 .App {
   text-align: center;
+  background-color: black;
+  color: white;
+}
+.ad{
+  background-color: black!important;
+  color: white!important
+}
+.carousel-control-next{
+  margin-right: -1%!important;
+  width: 15vh!important;
+  height: 15vh!important;
+  margin-top: 10vh;
+}
+
+.carousel-control-prev{
+  margin-left: -1%!important;
+  width: 15vh!important;
+  height: 15vh!important;
+  margin-top: 10vh;
+}
+.top-s{
+
+position: sticky!important;
+top: 0px;
+z-index: 2;
+}
+
+.custom-spinner-color{
+  color: green;
+}
+
+.genre-details{
+  padding:1em;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.commentpersonal{
+  background-color: black;
+  z-index: 3;
+}
+
+.genre-button{
+  margin-left:4em;
+}
+
+input[type="text"] {
+  padding:10px;
+  background:var(--secondary-color);
+  width:100%;
+  color:white;
+  font-size: 24px;
+  font-weight:500;
+}
+
+input[type="text"]:focus{
+  outline:none;
+}
+
+
+input[type="checkbox"] {
+
+  transform: scale(1.5);
+  margin-bottom:10px;
+  
+}
+.container-fluid{
+  height: 50vh;
+}
+.col-md-2 img{
+  height: 30vh;
+  object-fit: cover;
+}
+.none{
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  top: 100px;
+  overflow: hidden;
+}
+.bi-caret-down-fill{
+  cursor: pointer;
+}
+.success{
+  background-color: green;
+  color: white;
+}
+
+.movie-row{
+  margin-top:20px;
+  margin-bottom:50px;
+}
+.movie-cover{
+  width:99%;
+  transition:0.3s;
+  opacity: 0.7;
+}
+.movie-cover:hover{
+  opacity: 1;
+  transition:0.3s;
+  cursor:pointer;
+ transform:scale(1.05);
+}
+
+
+.carousel-control-next{
+  margin-right:-5%;
+}
+
+.carousel-control-prev{
+  margin-left:-5%;
+}
+
+.account-page{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--account-bg-color);
+}
+
+.profile-page{
+  padding:5% 20%;
+  color:#fff
+}
+
+.profile-title{
+  
+  font-size: 64px;
+}
+
+
+.account-page{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--account-bg-color);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+#logo {
+  width: 15vh;
+  height: 100%;
+}
+#costumizeNavbar{
+  color: white!important;
+  background-color: black!important;
+}
+.navtext{
+  color: white!important;
+}
+.adapt{
+  height: 6vh;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
