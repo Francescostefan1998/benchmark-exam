@@ -10,7 +10,7 @@ class WatchIt extends Component {
   fetchMovie = async () => {
     try {
       let response = await fetch(
-        "http://www.omdbapi.com/?apikey=b5b46d60&s=movie%20horror"
+        `http://www.omdbapi.com/?apikey=b5b46d60&s=movie%20${this.props.horror}`
       );
       if (response.ok) {
         let data = await response.json();
@@ -57,7 +57,7 @@ class WatchIt extends Component {
     return (
       <div className="container-fluid">
         <div className="movie-gallery m-2">
-          <h5 className="text-light mt-2 mb-2">Watch It Again</h5>
+          <h5 className="text-light mt-2 mb-2">{this.props.title}</h5>
           {this.state.isLoading && (
             <Spinner
               animation="border"

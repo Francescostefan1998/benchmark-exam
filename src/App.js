@@ -3,9 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MyNavbar from "./components/MyNavbar";
 
 import MyTitle from "./components/MyTitle";
-import TrendingNow from "./components/TrendingNow";
 import WatchIt from "./components/WatchIt";
-import NewRealeases from "./components/NewReleases";
 import MyFooter from "./components/MyFooter";
 import FilterBook from "./components/FilterBook";
 
@@ -14,9 +12,12 @@ function App() {
     <div className="ad">
       <MyNavbar />
       <MyTitle />
-      <TrendingNow />
-      <WatchIt />
-      <NewRealeases />
+      <WatchIt horror="2020" title="New Releases" />
+
+      <WatchIt horror="new" title="Trending Now" />
+
+      <WatchIt horror="horror" title="Watch It Again" />
+
       <MyFooter />
     </div>
   );

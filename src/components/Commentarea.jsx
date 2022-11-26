@@ -1,6 +1,4 @@
-import TrendingNow from "./TrendingNow";
 import WatchIt from "./WatchIt";
-import NewReleases from "./NewReleases";
 import { Component } from "react";
 
 class Commentarea extends Component {
